@@ -142,7 +142,7 @@ class Resnet101 (nn.Module):
     
     def forward(self, x):
         x = self.stem(x)
-        print(x.shape)
+        #print(x.shape)
         x = self.max_pool2D(x)
         #print("Before stage",x.shape)
 

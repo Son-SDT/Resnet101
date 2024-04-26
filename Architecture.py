@@ -155,6 +155,7 @@ class Resnet101 (nn.Module):
         x = self.stage_2_b1(x)
         x = self.stage_2_b2(x)
         x = self.stage_2_b3(x)
+        x = self.stage_2_b4(x)
         x = self.max_pool2D(x)
         #print("Stage 2",x.shape)
 
